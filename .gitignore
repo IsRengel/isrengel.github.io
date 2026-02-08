@@ -1,0 +1,6 @@
+.idea
+node_modules/
+resources
+.hugo_build.lock
+public/*
+build.ps1
