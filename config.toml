@@ -13,376 +13,616 @@ disable404 = true
 defaultContentLanguage = "en"
 
 [languages]
+
   [languages.en]
-    languageCode = "en-us"
-    weight = 1
-    title = "Josue Rengel"
-    [languages.en.params]
-      description = "DevOps Engineer | Cloud & Platform Engineering"
-      author = "Josue Rengel"
-      keywords = ["AWS", "Azure", "Terraform", "CloudFormation", "Python", "Go", "TypeScript", "SQL", "Shell Script", "Docker", "K8s", "Git", "GitHub Actions", "Linux", "SOPS", "CI/CD"]
-      styles = "styles-3.css"
-      
-      # Profile section
-      [languages.en.params.profile]
-          name = "Josue Rengel"
-          tagline = "DevOps Engineer | Cloud & Platform Engineering"
-          avatar = "profile.png"
+  languageCode = "en-us"
+  weight = 1
+  title = "Josue Rengel"
 
-      # Contact section
-      [languages.en.params.contact]
-          enable = true
-          [[languages.en.params.contact.list]]
-          class = "email"
-          icon = "fa-envelope"
-          url = "mailto: ismaelrengel10@gmail.com"
-          title = "ismaelrengel10@gmail.com" 
-          [[languages.en.params.contact.list]]
-          class = "linkedin"
-          icon = "fa-linkedin"
-          url = "https://www.linkedin.com/in/josue-rengel-9093b9258/"
-          title = "LinkedIn"
-          [[languages.en.params.contact.list]]
-          class = "github"
-          icon = "fa-github"
-          url = "https://github.com/IsRengel"
-          title = "GitHub"
+  [languages.en.params]
+  description = "DevOps Engineer | Kubernetes | Cloud Infrastructure | Platform Engineering"
+  author = "Josue Rengel"
+  keywords = [
+    "AWS","Azure","Terraform","Kubernetes","Docker","CI/CD","GitHub Actions",
+    "Linux","Python","Go","SQL","DevOps","Platform Engineering",
+    "Infrastructure as Code","Observability","Prometheus","Grafana",
+    "Datadog","Networking","VPN","TLS","GitOps","Cloud Infrastructure"
+  ]
+  styles = "styles-3.css"
 
-      # Downloads section
-      [languages.en.params.downloads]
-          enable = true
-          title = "Downloads"
-          [[languages.en.params.downloads.list]]
-          name = "CV / Resume"
-          icon = "fa-file-pdf-o"
-          filepath = "assets/pdf/cv-en.pdf"
+  # Profile section
+  [languages.en.params.profile]
+  name = "Josue Rengel"
+  tagline = "DevOps Engineer | Kubernetes | Cloud Infrastructure | Platform Engineering"
+  avatar = "profile.png"
 
-      # Education section
-      [languages.en.params.education]
-          enable = true
-          title = "Education"
-          icon = "fa-graduation-cap"
-          [[languages.en.params.education.list]]
-          degree = "B.Sc. in Information Systems Engineering"
-          college = "Universidad Internacional del Ecuador (UIDE)"
-          dates = "2024 - Present"
-          description = "Currently pursuing a degree focused on software development, systems architecture, databases, and information technologies."
-          [[languages.en.params.education.list]]
-          degree = "Technical High School Diploma – Accounting Services"
-          college = "Colegio de Bachillerato Soberanía Nacional"
-          dates = "2015 - 2021"
-          description = "Technical education with a strong foundation in accounting services, administrative processes, and analytical thinking."
+  # Contact section
+  [languages.en.params.contact]
+  enable = true
 
-      # Certificates section (Renamed from Certifications for new theme)
-      [languages.en.params.certificates]
-          enable = true
-          title = "Certifications"
-          icon = "fa-certificate"
-          [[languages.en.params.certificates.list]]
-          title = "AWS Certified Cloud Practitioner"
-          type = "credly"
-          badgeId = "f0f68d84-849c-41d6-a3b8-2cba90ec0463"
-          [[languages.en.params.certificates.list]]
-          title = "Python for Data Science"
-          type = "credly"
-          badgeId = "920f716f-5eee-4346-8516-0328084586c3"
+  [[languages.en.params.contact.list]]
+  class = "email"
+  icon = "fa-envelope"
+  url = "mailto: ismaelrengel10@gmail.com"
+  title = "ismaelrengel10@gmail.com"
 
-      # Interests section
-      [languages.en.params.interests]
-          enable = true
-          title = "Hobbies"
-          icon = "fa-gamepad"
-          [[languages.en.params.interests.list]]
-          interest = "Sports & Fitness (Gym, Football, Basketball)"
-          [[languages.en.params.interests.list]]
-          interest = "Reading and continuous learning"
-          [[languages.en.params.interests.list]]
-          interest = "Open-source development and collaboration"
-          [[languages.en.params.interests.list]]
-          interest = "Music enthusiast"
-          [[languages.en.params.interests.list]]
-          interest = "Drawing and creative illustration"
+  [[languages.en.params.contact.list]]
+  class = "linkedin"
+  icon = "fa-linkedin"
+  url = "https://www.linkedin.com/in/josue-rengel-9093b9258/"
+  title = "LinkedIn"
 
-      # Summary section
-      [languages.en.params.summary]
-          enable = true
-          icon = "fa-user"
-          title = "About Me"
-          summary = "I am a DevOps Engineer with strong experience in cloud infrastructure, automation, backend development, and data-oriented platforms. I specialize in building secure, scalable, and cost-efficient systems, with a strong focus on DevSecOps, DataOps, and cloud-based data processing architectures.\n\nI have hands-on experience designing and operating cloud infrastructure primarily on AWS, with additional exposure to Azure environments. As part of my DevOps role, I have designed and supported infrastructures for processing both small and large volumes of data, enabling reliable data pipelines and analytics workflows. My background in backend development allows me to collaborate effectively with engineering teams and align infrastructure with application and data needs.\n\nI am highly driven by learning and continuous improvement, always seeking new technical challenges that push me to grow professionally. I enjoy working in collaborative environments, proposing solutions, and performing effectively under pressure.\n\n\"The more I learn, the more I realize how much there is to learn.\" — attributed to Albert Einstein"
-          keywordsAsTags = true
+  [[languages.en.params.contact.list]]
+  class = "github"
+  icon = "fa-github"
+  url = "https://github.com/IsRengel"
+  title = "GitHub"
 
-      # Experiences section
-      [languages.en.params.experiences]
-          enable = true
-          icon = "fa-briefcase"
-          title = "Experiences"
-          [[languages.en.params.jobs.list]]
-          position = "DevOps Engineer"
-          dates = "Mar 2024 - Present"
-          company = "Plika"
-          details = "Design, implementation, and maintenance of cloud infrastructure primarily on AWS, with additional support for Azure-based integrations.\n\nManagement and operation of Kubernetes clusters for production and data-intensive workloads.\n\nImplementation of CI/CD pipelines with a strong focus on automation, reliability, and scalability.\n\nInfrastructure cost optimization by analyzing usage patterns, improving resource allocation, and reducing unnecessary cloud spend.\n\nDevSecOps practices: infrastructure hardening, secrets management, and secure access control.\n\nDesign and proposal of secure, event-driven data infrastructures including Data Lakes, Lakehouse, and Data Warehouse architectures.\n\nImplementation of Infrastructure as Code (IaC) and monitoring strategies to ensure observability, cost control, and system reliability."
-          [[languages.en.params.jobs.list]]
-          position = "Backend Developer"
-          dates = "Aug 2023 - Oct 2024"
-          company = "Plika"
-          details = "Backend development using Python, with a strong specialization in FastAPI for high-performance and scalable APIs.\n\nDevelopment and maintenance of backend services using Django for business-critical applications.\n\nDesign and implementation of RESTful APIs, following clean architecture and best practices.\n\nDatabase modeling, query optimization, and performance tuning.\n\nIntegration of backend services with cloud infrastructure, authentication systems, and third-party services."
-          [[languages.en.params.jobs.list]]
-          position = "Data Engineer"
-          dates = "Jun 2023 - Aug 2023"
-          company = "Plika"
-          details = "Data pipeline design and implementation.\n\nData processing and transformation workflows.\n\nCollaboration with backend teams for data integration."
-          [[languages.en.params.jobs.list]]
-          position = "DevOps Consultant (Freelance)"
-          dates = "Jul 2022 - Present"
-          company = "Latix"
-          details = "Provision of DevOps and cloud consulting services on an hourly basis for multiple companies.\n\nDesign and implementation of cloud infrastructure on AWS, tailored to client-specific requirements.\n\nKubernetes cluster setup, optimization, and operational support.\n\nImplementation of CI/CD pipelines, automation, and Infrastructure as Code.\n\nInfrastructure cost optimization through right-sizing, resource consolidation, and usage analysis.\n\nSecurity-focused infrastructure design following DevSecOps best practices."
+  # Downloads section
+  [languages.en.params.downloads]
+  enable = true
+  title = "Downloads"
 
-      # Projects section
-      [languages.en.params.projects]
-          enable = true
-          icon = "fa-archive"
-          title = "Projects"
-          intro = ""
-          [[languages.en.params.projects.list]]
-          title = "Install Cursor Editor on Linux"
-          gh_repository_url = "IsRengel/InstallCursorEditorLinux"
-          tagline = "Open-source Bash installer created to simplify the installation of Cursor Editor on Linux when no official package was available. The project automated setup, desktop integration, and updates, and received contributions and feedback from developers around the world."
+  [[languages.en.params.downloads.list]]
+  name = "CV / Resume"
+  icon = "fa-file-pdf-o"
+  filepath = "assets/pdf/cv-en.pdf"
 
-      # Publications (Custom - Removed as theme doesn't support it anymore, user didn't mention it in new structure)
+  # Education section
+  [languages.en.params.education]
+  enable = true
+  title = "Education"
+  icon = "fa-graduation-cap"
 
-      # Skills section
-      [languages.en.params.skills]
-          enable = true
-          icon = "fa-tasks"
-          title = "Skills"
-          [[languages.en.params.skills.list]]
-          skill = "Amazon Web Services (AWS)"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "Microsoft Azure"
-          level = "45%"
-          [[languages.en.params.skills.list]]
-          skill = "Kubernetes"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "Infrastructure as Code (Terraform)"
-          level = "95%"
-          [[languages.en.params.skills.list]]
-          skill = "CI/CD Pipelines"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "GitHub and GitOps"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "Python"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "FastAPI"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "Django"
-          level = "80%"
-          [[languages.en.params.skills.list]]
-          skill = "Docker"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "Linux and Bash"
-          level = "90%"
-          [[languages.en.params.skills.list]]
-          skill = "SQL"
-          level = "80%"
-          [[languages.en.params.skills.list]]
-          skill = "Go"
-          level = "65%"
-          
-      # Footer section
-      [languages.en.params.footer]
-          copyright = "Josue Rengel"
+  [[languages.en.params.education.list]]
+  degree = "B.Sc. in Information Systems Engineering"
+  college = "Universidad Internacional del Ecuador (UIDE)"
+  dates = "2024 - Present"
+  description = "Currently pursuing a degree focused on software development, systems architecture, databases, and information technologies."
 
+  [[languages.en.params.education.list]]
+  degree = "Technical High School Diploma – Accounting Services"
+  college = "Colegio de Bachillerato Soberanía Nacional"
+  dates = "2015 - 2021"
+  description = "Technical education with a strong foundation in accounting services, administrative processes, and analytical thinking."
+
+  # Certificates section
+  [languages.en.params.certificates]
+  enable = true
+  title = "Certifications"
+  icon = "fa-certificate"
+
+  [[languages.en.params.certificates.list]]
+  title = "AWS Certified Cloud Practitioner"
+  type = "credly"
+  badgeId = "f0f68d84-849c-41d6-a3b8-2cba90ec0463"
+
+  [[languages.en.params.certificates.list]]
+  title = "Python for Data Science"
+  type = "credly"
+  badgeId = "920f716f-5eee-4346-8516-0328084586c3"
+
+  # Interests section
+  [languages.en.params.interests]
+  enable = true
+  title = "Hobbies"
+  icon = "fa-gamepad"
+
+  [[languages.en.params.interests.list]]
+  interest = "Sports & Fitness (Gym, Football, Basketball)"
+
+  [[languages.en.params.interests.list]]
+  interest = "Reading and continuous learning"
+
+  [[languages.en.params.interests.list]]
+  interest = "Open-source development and collaboration"
+
+  [[languages.en.params.interests.list]]
+  interest = "Music enthusiast"
+
+  [[languages.en.params.interests.list]]
+  interest = "Drawing and creative illustration"
+
+  # Summary section
+  [languages.en.params.summary]
+  enable = true
+  icon = "fa-user"
+  title = "About Me"
+  summary = """
+DevOps Engineer specializing in cloud infrastructure, platform engineering, and automation. I design and operate secure, scalable, and cost-efficient systems primarily on AWS, with experience in Kubernetes, Infrastructure as Code, and CI/CD automation.
+
+My work focuses on building reliable platforms that support backend services and data-intensive workloads. I have hands-on experience implementing Kubernetes-based environments, infrastructure provisioning with Terraform, automated deployment pipelines, and observability systems using metrics, logs, and APM tools.
+
+I have also worked on large-scale data platforms based on Data Lake and Data Warehouse architectures for processing high-volume datasets, implementing layered data models such as Bronze, Silver, and Gold to structure ingestion, transformation, and analytics workflows.
+
+Additionally, I have participated in the deployment of AI-related platforms on AWS, including services based on Amazon Bedrock and MCP servers used for running and integrating AI models within production systems.
+
+I also work extensively with DevSecOps practices, including secure networking, VPN access, TLS management, secrets handling, and infrastructure hardening.
+
+My background in backend development allows me to bridge the gap between infrastructure and application development, enabling teams to deliver software faster and more reliably.
+
+I am passionate about solving complex infrastructure problems, continuously improving systems, and learning new technologies.
+"""
+  keywordsAsTags = true
+
+  # Experiences section
+  [languages.en.params.experiences]
+  enable = true
+  icon = "fa-briefcase"
+  title = "Experiences"
+
+  [[languages.en.params.jobs.list]]
+  position = "DevOps Engineer"
+  dates = "Mar 2024 - Present"
+  company = "Plika"
+  details = """
+Design, implementation, and operation of cloud infrastructure primarily on AWS, supporting production systems and data-intensive workloads.
+
+Provisioning and management of Kubernetes clusters for scalable application platforms, data processing workloads, and backend services.
+
+Implementation of Infrastructure as Code (Terraform) to automate infrastructure provisioning, configuration, and lifecycle management.
+
+Development of CI/CD pipelines to enable automated builds, testing, and deployments, improving release reliability and delivery speed.
+
+Design and implementation of data platforms based on Data Lake and Data Warehouse architectures to support analytics workloads and large-scale data processing.
+
+Implementation of layered data architectures using the Medallion model (Bronze, Silver, Gold) to structure data ingestion, transformation, and consumption pipelines.
+
+Participation in the deployment of AI platforms on AWS, including services based on Amazon Bedrock and the deployment of MCP servers used to run and integrate AI models into production environments.
+
+Design and implementation of secure infrastructure practices including secrets management, TLS configuration, and controlled access through secure networking and VPN-based connectivity.
+
+Infrastructure scaling strategies including horizontal and vertical scaling to support variable workloads.
+
+Implementation of observability practices using metrics, centralized logging, and APM tools to monitor system health, performance, and reliability.
+
+Cloud cost optimization through resource analysis, right-sizing, and improved workload distribution.
+
+Collaboration with engineering teams to align infrastructure architecture with backend services, data pipelines, and analytics platforms.
+"""
+
+  [[languages.en.params.jobs.list]]
+  position = "Backend Developer"
+  dates = "Aug 2023 - Oct 2024"
+  company = "Plika"
+  details = """
+Backend development using Python with a strong focus on building high-performance APIs using FastAPI.
+
+Development and maintenance of backend services using Django for business-critical systems.
+
+Design and implementation of RESTful APIs following clean architecture principles with emphasis on scalability, maintainability, and performance.
+
+Database schema design, query optimization, and performance tuning for production workloads.
+
+Integration of backend services with cloud infrastructure, authentication systems, and external APIs.
+
+Collaboration with DevOps and infrastructure layers to ensure applications ran efficiently in containerized and cloud-based environments.
+
+Participation in improving deployment workflows and aligning backend services with CI/CD pipelines and cloud infrastructure.
+"""
+
+  [[languages.en.params.jobs.list]]
+  position = "Data Engineer"
+  dates = "Jun 2023 - Aug 2023"
+  company = "Plika"
+  details = """
+Design and implementation of data pipelines to support data processing and analytics workflows.
+
+Development of data ingestion and transformation processes for structured and semi-structured datasets.
+
+Collaboration with backend and infrastructure teams to integrate data pipelines with application services.
+
+Support for data processing environments and infrastructure required for analytics workloads.
+
+Participation in the early design of scalable data architectures supporting data lake and analytical workloads.
+"""
+
+  [[languages.en.params.jobs.list]]
+  position = "DevOps Consultant (Freelance)"
+  dates = "Jul 2022 - Present"
+  company = "Latix"
+  details = """
+Provision of DevOps and cloud consulting services for multiple companies, supporting infrastructure design, platform deployments, and operational improvements.
+
+Design and implementation of cloud infrastructure on AWS using Infrastructure as Code (Terraform) to enable reproducible and scalable environments.
+
+Deployment, optimization, and operational support of Kubernetes clusters, including workload scaling strategies and cluster resource optimization.
+
+Infrastructure cost audits and optimization initiatives, identifying inefficiencies and implementing strategies to significantly reduce cloud spending.
+
+Implementation of monitoring and observability platforms using metrics, logs, and APM tools to improve system visibility and reliability.
+
+Development of automation workflows for infrastructure provisioning, deployment pipelines, and operational tasks.
+
+Support for the deployment of AI-related platforms and services using AWS technologies such as Amazon Bedrock.
+
+Collaboration with engineering teams to improve platform reliability, deployment processes, and cloud architecture.
+"""
+
+  # Projects section
+  [languages.en.params.projects]
+  enable = true
+  icon = "fa-archive"
+  title = "Projects"
+  intro = ""
+
+  [[languages.en.params.projects.list]]
+  title = "Install Cursor Editor on Linux"
+  gh_repository_url = "IsRengel/InstallCursorEditorLinux"
+  tagline = "Open-source Bash installer created to simplify the installation of Cursor Editor on Linux when no official package was available. The project automated setup, desktop integration, and updates, and received contributions and feedback from developers around the world."
+
+  # Skills section
+  [languages.en.params.skills]
+  enable = true
+  icon = "fa-tasks"
+  title = "Skills"
+
+  [[languages.en.params.skills.list]]
+  skill = "Amazon Web Services (AWS)"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Kubernetes"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Terraform (Infrastructure as Code)"
+  level = "95%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Docker & Containerization"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "CI/CD Automation"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "GitOps (GitHub, GitHub Actions)"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Observability (Grafana, Metrics, Logs, APM)"
+  level = "80%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Linux Systems & Bash Scripting"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Cloud Networking (VPN, TLS, Secure Access)"
+  level = "75%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Python"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "FastAPI"
+  level = "90%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Django"
+  level = "80%"
+
+  [[languages.en.params.skills.list]]
+  skill = "SQL & Data Workflows"
+  level = "80%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Go"
+  level = "65%"
+
+  [[languages.en.params.skills.list]]
+  skill = "Microsoft Azure"
+  level = "45%"
+
+  # Footer
+  [languages.en.params.footer]
+  copyright = "Josue Rengel"
   [languages.es]
-    languageCode = "es-es"
-    weight = 2
-    title = "Josue Rengel (ES)"
-    [languages.es.params]
-      description = "Ingeniero DevOps | Ingeniería de Cloud y Plataforma"
-      author = "Josue Rengel"
-      keywords = ["AWS", "Terraform", "CloudFormation", "Python", "Go", "Shell Script", "Docker", "K8s", "Git", "GitHub Actions", "Azure", "Linux", "SOPS", "CI/CD", "TypeScript", "SQL"]
-      styles = "styles-3.css"
+  languageCode = "es-es"
+  weight = 2
+  title = "Josue Rengel (ES)"
 
-      # Profile section
-      [languages.es.params.profile]
-          name = "Josue Rengel"
-          tagline = "Ingeniero DevOps | Ingeniería de Cloud y Plataforma"
-          avatar = "profile.png"
+  [languages.es.params]
+  description = "DevOps Engineer | Kubernetes | Cloud Infrastructure | Platform Engineering"
+  author = "Josue Rengel"
+  keywords = [
+    "AWS","Azure","Terraform","Kubernetes","Docker","CI/CD","GitHub Actions",
+    "Linux","Python","Go","SQL","DevOps","Platform Engineering",
+    "Infrastructure as Code","Observability","Prometheus","Grafana",
+    "Datadog","Networking","VPN","TLS","GitOps","Cloud Infrastructure"
+  ]
+  styles = "styles-3.css"
 
-      # Contact section
-      [languages.es.params.contact]
-          enable = true
-          [[languages.es.params.contact.list]]
-          class = "email"
-          icon = "fa-envelope"
-          url = "mailto: ismaelrengel10@gmail.com"
-          title = "ismaelrengel10@gmail.com" 
-          [[languages.es.params.contact.list]]
-          class = "linkedin"
-          icon = "fa-linkedin"
-          url = "https://www.linkedin.com/in/josue-rengel-9093b9258/"
-          title = "LinkedIn"
-          [[languages.es.params.contact.list]]
-          class = "github"
-          icon = "fa-github"
-          url = "https://github.com/IsRengel"
-          title = "GitHub"
+  # Profile section
+  [languages.es.params.profile]
+  name = "Josue Rengel"
+  tagline = "DevOps Engineer | Kubernetes | Cloud Infrastructure | Platform Engineering"
+  avatar = "profile.png"
 
-      # Downloads section
-      [languages.es.params.downloads]
-          enable = true
-          title = "Descargas"
-          [[languages.es.params.downloads.list]]
-          name = "CV / Hoja de Vida"
-          icon = "fa-file-pdf-o"
-          filepath = "assets/pdf/cv-es.pdf"
+  # Contact section
+  [languages.es.params.contact]
+  enable = true
 
+  [[languages.es.params.contact.list]]
+  class = "email"
+  icon = "fa-envelope"
+  url = "mailto: ismaelrengel10@gmail.com"
+  title = "ismaelrengel10@gmail.com"
 
-      # Education section
-      [languages.es.params.education]
-          enable = true
-          title = "Educación"
-          icon = "fa-graduation-cap"
-          [[languages.es.params.education.list]]
-          degree = "Ingeniería en Sistemas de Información"
-          college = "Universidad Internacional del Ecuador (UIDE)"
-          dates = "2024 - Presente"
-          description = "Actualmente cursando una carrera enfocada en desarrollo de software, arquitectura de sistemas, bases de datos y tecnologías de la información."
-          [[languages.es.params.education.list]]
-          degree = "Bachillerato Técnico – Servicios de Contabilidad"
-          college = "Colegio de Bachillerato Soberanía Nacional"
-          dates = "2015 - 2021"
-          description = "Educación técnica con una base sólida en servicios contables, procesos administrativos y pensamiento analítico."
+  [[languages.es.params.contact.list]]
+  class = "linkedin"
+  icon = "fa-linkedin"
+  url = "https://www.linkedin.com/in/josue-rengel-9093b9258/"
+  title = "LinkedIn"
 
-      # Certificates section
-      [languages.es.params.certificates]
-          enable = true
-          icon = "fa-certificate"
-          title = "Certificaciones"
-          [[languages.es.params.certificates.list]]
-          title = "AWS Certified Cloud Practitioner"
-          type = "credly"
-          badgeId = "f0f68d84-849c-41d6-a3b8-2cba90ec0463"
-          [[languages.es.params.certificates.list]]
-          title = "Python for Data Science"
-          type = "credly"
-          badgeId = "920f716f-5eee-4346-8516-0328084586c3"
-          
+  [[languages.es.params.contact.list]]
+  class = "github"
+  icon = "fa-github"
+  url = "https://github.com/IsRengel"
+  title = "GitHub"
 
-      # Interests section
-      [languages.es.params.interests]
-          enable = true
-          title = "Pasatiempos"
-          icon = "fa-gamepad"
-          [[languages.es.params.interests.list]]
-          interest = "Deportes y Fitness (Gimnasio, Fútbol, Baloncesto)"
-          [[languages.es.params.interests.list]]
-          interest = "Lectura y aprendizaje continuo"
-          [[languages.es.params.interests.list]]
-          interest = "Desarrollo y colaboración de código abierto"
-          [[languages.es.params.interests.list]]
-          interest = "Entusiasta de la música"
-          [[languages.es.params.interests.list]]
-          interest = "Dibujo e ilustración creativa"
+  # Downloads section
+  [languages.es.params.downloads]
+  enable = true
+  title = "Descargas"
 
-      # Summary section
-      [languages.es.params.summary]
-          enable = true
-          icon = "fa-user"
-          title = "Sobre Mí"
-          summary = "Soy un Ingeniero DevOps con sólida experiencia en infraestructura en la nube, automatización, desarrollo backend y plataformas orientadas a datos. Me especializo en construir sistemas seguros, escalables y rentables, con un fuerte enfoque en DevSecOps, DataOps y arquitecturas de procesamiento de datos basadas en la nube.\n\nTengo experiencia práctica diseñando y operando infraestructura en la nube principalmente en AWS, con exposición adicional a entornos de Azure. Como parte de mi rol de DevOps, he diseñado y soportado infraestructuras para procesar volúmenes pequeños y grandes de datos, permitiendo tuberías de datos confiables y flujos de trabajo de análisis. Mi experiencia en desarrollo backend me permite colaborar eficazmente con los equipos de ingeniería y alinear la infraestructura con las necesidades de aplicaciones y datos.\n\nMe impulsa el aprendizaje y la mejora continua, siempre buscando nuevos desafíos técnicos que me empujen a crecer profesionalmente. Disfruto trabajando en entornos colaborativos, proponiendo soluciones y desempeñándome eficazmente bajo presión.\n\n\"Cuanto más aprendo, más me doy cuenta de cuánto hay por aprender.\" — atribuido a Albert Einstein"
-          keywordsAsTags = true
+  [[languages.es.params.downloads.list]]
+  name = "CV / Hoja de Vida"
+  icon = "fa-file-pdf-o"
+  filepath = "assets/pdf/cv-es.pdf"
 
-      # Experiences section
-      [languages.es.params.experiences]
-          enable = true
-          icon = "fa-briefcase"
-          title = "Experiencia"
-          [[languages.es.params.jobs.list]]
-          position = "Ingeniero DevOps"
-          dates = "Mar 2024 - Presente"
-          company = "Plika"
-          details = "Diseño, implementación y mantenimiento de infraestructura en la nube principalmente en AWS, con soporte adicional para integraciones basadas en Azure.\n\nGestión y operación de clústeres de Kubernetes para cargas de trabajo de producción e intensivas en datos.\n\nImplementación de pipelines de CI/CD con un fuerte enfoque en la automatización, la confiabilidad y la escalabilidad.\n\nOptimización de costos de infraestructura analizando patrones de uso, mejorando la asignación de recursos y reduciendo el gasto innecesario en la nube.\n\nPrácticas de DevSecOps: endurecimiento de la infraestructura, gestión de secretos y control de acceso seguro.\n\nDiseño y propuesta de infraestructuras de datos seguras y basadas en eventos, incluidas arquitecturas de Data Lakes, Lakehouse y Data Warehouse.\n\nImplementación de Infraestructura como Código (IaC) y estrategias de monitoreo para garantizar la observabilidad, el control de costos y la confiabilidad del sistema."
-          [[languages.es.params.jobs.list]]
-          position = "Desarrollador Backend"
-          dates = "Ago 2023 - Oct 2024"
-          company = "Plika"
-          details = "Desarrollo backend utilizando Python, con una fuerte especialización en FastAPI para APIs de alto rendimiento y escalables.\n\nDesarrollo y mantenimiento de servicios backend utilizando Django para aplicaciones críticas para el negocio.\n\nDiseño e implementación de APIs RESTful, siguiendo una arquitectura limpia y mejores prácticas.\n\nModelado de bases de datos, optimización de consultas y ajuste de rendimiento.\n\nIntegración de servicios backend con infraestructura en la nube, sistemas de autenticación y servicios de terceros."
-          [[languages.es.params.jobs.list]]
-          position = "Ingeniero de Datos"
-          dates = "Jun 2023 - Ago 2023"
-          company = "Plika"
-          details = "Diseño e implementación de pipelines de datos.\n\nFlujos de trabajo de procesamiento y transformación de datos.\n\nColaboración con equipos de backend para integración de datos."
-          [[languages.es.params.jobs.list]]
-          position = "Consultor DevOps (Freelance)"
-          dates = "Jul 2022 - Presente"
-          company = "Latix"
-          details = "Prestación de servicios de consultoría DevOps y en la nube por horas para múltiples empresas.\n\nDiseño e implementación de infraestructura en la nube en AWS, adaptada a los requisitos específicos del cliente.\n\nConfiguración, optimización y soporte operativo de clústeres Kubernetes.\n\nImplementación de pipelines de CI/CD, automatización e Infraestructura como Código.\n\nOptimización de costos de infraestructura a través del ajuste de tamaño, consolidación de recursos y análisis de uso.\n\nDiseño de infraestructura centrado en la seguridad siguiendo las mejores prácticas de DevSecOps."
+  # Education section
+  [languages.es.params.education]
+  enable = true
+  title = "Educación"
+  icon = "fa-graduation-cap"
 
-      # Projects section
-      [languages.es.params.projects]
-          enable = true
-          icon = "fa-archive"
-          title = "Proyectos"
-          intro = ""
-          [[languages.es.params.projects.list]]
-          title = "Instalar Cursor Editor en Linux"
-          gh_repository_url = "IsRengel/InstallCursorEditorLinux"
-          tagline = "Instalador Bash de código abierto creado para simplificar la instalación de Cursor Editor en Linux cuando no había un paquete oficial disponible. El proyecto automatizó la configuración, la integración de escritorio y las actualizaciones, y recibió contribuciones y comentarios de desarrolladores de todo el mundo."
-      
-      # Publications (Custom - Removed)
+  [[languages.es.params.education.list]]
+  degree = "Ingeniería en Sistemas de Información"
+  college = "Universidad Internacional del Ecuador (UIDE)"
+  dates = "2024 - Presente"
+  description = "Actualmente cursando una carrera enfocada en desarrollo de software, arquitectura de sistemas, bases de datos y tecnologías de la información."
 
-      # Skills section
-      [languages.es.params.skills]
-          enable = true
-          icon = "fa-tasks"
-          title = "Habilidades"
-          [[languages.es.params.skills.list]]
-          skill = "Amazon Web Services (AWS)"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "Microsoft Azure"
-          level = "45%"
-          [[languages.es.params.skills.list]]
-          skill = "Kubernetes"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "Infrastructure as Code (Terraform)"
-          level = "95%"
-          [[languages.es.params.skills.list]]
-          skill = "CI/CD Pipelines"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "GitHub and GitOps"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "Python"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "FastAPI"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "Django"
-          level = "80%"
-          [[languages.es.params.skills.list]]
-          skill = "Docker"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "Linux and Bash"
-          level = "90%"
-          [[languages.es.params.skills.list]]
-          skill = "SQL"
-          level = "80%"
-          [[languages.es.params.skills.list]]
-          skill = "Go"
-          level = "65%"
+  [[languages.es.params.education.list]]
+  degree = "Bachillerato Técnico – Servicios de Contabilidad"
+  college = "Colegio de Bachillerato Soberanía Nacional"
+  dates = "2015 - 2021"
+  description = "Educación técnica con una base sólida en servicios contables, procesos administrativos y pensamiento analítico."
 
-      # Footer section
-      [languages.es.params.footer]
-          copyright = "Josue Rengel"
+  # Certificates section
+  [languages.es.params.certificates]
+  enable = true
+  icon = "fa-certificate"
+  title = "Certificaciones"
+
+  [[languages.es.params.certificates.list]]
+  title = "AWS Certified Cloud Practitioner"
+  type = "credly"
+  badgeId = "f0f68d84-849c-41d6-a3b8-2cba90ec0463"
+
+  [[languages.es.params.certificates.list]]
+  title = "Python for Data Science"
+  type = "credly"
+  badgeId = "920f716f-5eee-4346-8516-0328084586c3"
+
+  # Interests section
+  [languages.es.params.interests]
+  enable = true
+  title = "Pasatiempos"
+  icon = "fa-gamepad"
+
+  [[languages.es.params.interests.list]]
+  interest = "Deportes y Fitness (Gimnasio, Fútbol, Baloncesto)"
+
+  [[languages.es.params.interests.list]]
+  interest = "Lectura y aprendizaje continuo"
+
+  [[languages.es.params.interests.list]]
+  interest = "Desarrollo y colaboración de código abierto"
+
+  [[languages.es.params.interests.list]]
+  interest = "Entusiasta de la música"
+
+  [[languages.es.params.interests.list]]
+  interest = "Dibujo e ilustración creativa"
+
+  # Summary section
+  [languages.es.params.summary]
+  enable = true
+  icon = "fa-user"
+  title = "Sobre Mí"
+  summary = """
+Ingeniero DevOps especializado en infraestructura en la nube, platform engineering y automatización. Diseño y opero sistemas seguros, escalables y eficientes en costos principalmente sobre AWS, con experiencia en Kubernetes, Infraestructura como Código y automatización de CI/CD.
+
+Mi trabajo se enfoca en construir plataformas confiables que soporten servicios backend y cargas de trabajo intensivas en datos. Tengo experiencia práctica implementando entornos basados en Kubernetes, aprovisionamiento de infraestructura con Terraform, pipelines de despliegue automatizados y sistemas de observabilidad basados en métricas, logs y herramientas APM.
+
+También he trabajado en plataformas de datos basadas en arquitecturas Data Lake y Data Warehouse para procesamiento de grandes volúmenes de información, utilizando modelos de datos por capas como Bronze, Silver y Gold para organizar pipelines de ingestión, transformación y análisis de datos.
+
+Adicionalmente, he participado en la implementación de plataformas relacionadas con inteligencia artificial en AWS, incluyendo el despliegue de servicios basados en Amazon Bedrock y servidores MCP para la ejecución e integración de modelos de IA dentro de plataformas productivas.
+
+También trabajo ampliamente con prácticas de DevSecOps, incluyendo redes seguras, acceso mediante VPN, gestión de TLS, manejo de secretos y endurecimiento de infraestructura.
+
+Mi experiencia en desarrollo backend me permite conectar de forma efectiva la infraestructura con las aplicaciones, facilitando que los equipos de ingeniería entreguen software de forma más rápida y confiable.
+
+Me motiva resolver problemas complejos de infraestructura, mejorar continuamente los sistemas y aprender nuevas tecnologías.
+"""
+  keywordsAsTags = true
+
+  # Experiences section
+  [languages.es.params.experiences]
+  enable = true
+  icon = "fa-briefcase"
+  title = "Experiencia"
+
+  [[languages.es.params.jobs.list]]
+  position = "Ingeniero DevOps"
+  dates = "Mar 2024 - Presente"
+  company = "Plika"
+  details = """
+Diseño, implementación y operación de infraestructura en la nube principalmente en AWS, soportando sistemas de producción y cargas de trabajo intensivas en datos.
+
+Aprovisionamiento y gestión de clústeres de Kubernetes para entornos escalables de aplicaciones, procesamiento de datos y servicios backend.
+
+Implementación de Infraestructura como Código (Terraform) para automatizar el aprovisionamiento, configuración y ciclo de vida de la infraestructura.
+
+Desarrollo de pipelines de CI/CD para habilitar compilación, pruebas y despliegues automatizados, mejorando la confiabilidad y velocidad de entrega de software.
+
+Diseño e implementación de plataformas de datos basadas en arquitecturas Data Lake y Data Warehouse para soportar procesamiento analítico y cargas de trabajo de grandes volúmenes de datos.
+
+Implementación de arquitecturas de datos por capas utilizando el modelo Medallion (Bronze, Silver, Gold) para estructurar pipelines de ingestión, transformación y consumo de datos.
+
+Participación en la implementación de plataformas de inteligencia artificial utilizando servicios de AWS como Amazon Bedrock, incluyendo el despliegue y operación de servidores MCP para la ejecución e integración de modelos de IA.
+
+Diseño e implementación de prácticas de infraestructura segura incluyendo gestión de secretos, configuración de TLS y control de accesos mediante redes seguras y conectividad basada en VPN.
+
+Implementación de estrategias de escalado horizontal y vertical para soportar cargas de trabajo variables.
+
+Implementación de prácticas de observabilidad utilizando métricas, logs centralizados y herramientas de APM para monitorear la salud, rendimiento y confiabilidad del sistema.
+
+Optimización de costos en la nube mediante análisis de recursos, ajuste de tamaño de instancias y mejor distribución de cargas de trabajo.
+
+Colaboración con equipos de ingeniería para alinear la arquitectura de infraestructura con servicios backend, pipelines de datos y plataformas analíticas.
+"""
+
+  [[languages.es.params.jobs.list]]
+  position = "Desarrollador Backend"
+  dates = "Ago 2023 - Oct 2024"
+  company = "Plika"
+  details = """
+Desarrollo backend utilizando Python con un fuerte enfoque en la construcción de APIs de alto rendimiento utilizando FastAPI.
+
+Desarrollo y mantenimiento de servicios backend utilizando Django para sistemas críticos del negocio.
+
+Diseño e implementación de APIs REST siguiendo principios de arquitectura limpia, con énfasis en escalabilidad, mantenibilidad y rendimiento.
+
+Diseño de esquemas de bases de datos, optimización de consultas y ajuste de rendimiento para cargas de trabajo en producción.
+
+Integración de servicios backend con infraestructura en la nube, sistemas de autenticación y APIs externas.
+
+Colaboración con las capas de DevOps e infraestructura para asegurar que las aplicaciones funcionen eficientemente en entornos contenerizados y basados en la nube.
+
+Participación en la mejora de flujos de despliegue y en la alineación de los servicios backend con pipelines de CI/CD e infraestructura cloud.
+"""
+
+  [[languages.es.params.jobs.list]]
+  position = "Ingeniero de Datos"
+  dates = "Jun 2023 - Ago 2023"
+  company = "Plika"
+  details = """
+Diseño e implementación de pipelines de datos para soportar flujos de procesamiento y análisis de información.
+
+Desarrollo de procesos de ingestión y transformación de datos estructurados y semi-estructurados.
+
+Colaboración con equipos de backend e infraestructura para integrar pipelines de datos con servicios de aplicación.
+
+Soporte a entornos de procesamiento de datos y a la infraestructura necesaria para cargas de trabajo analíticas.
+
+Participación en el diseño inicial de arquitecturas de datos escalables orientadas a Data Lakes y plataformas analíticas.
+"""
+
+  [[languages.es.params.jobs.list]]
+  position = "Consultor DevOps (Freelance)"
+  dates = "Jul 2022 - Presente"
+  company = "Latix"
+  details = """
+Prestación de servicios de consultoría DevOps y cloud para múltiples empresas, apoyando en el diseño de infraestructura, despliegue de plataformas y mejoras operativas.
+
+Diseño e implementación de infraestructura en la nube sobre AWS utilizando Infraestructura como Código (Terraform) para crear entornos reproducibles y escalables.
+
+Despliegue, optimización y soporte operativo de clústeres Kubernetes, incluyendo estrategias de escalado de cargas de trabajo y optimización de recursos.
+
+Auditorías de costos de infraestructura y ejecución de iniciativas de optimización para identificar ineficiencias y reducir significativamente el gasto en la nube.
+
+Implementación de plataformas de monitoreo y observabilidad utilizando métricas, logs y herramientas de APM para mejorar la visibilidad y confiabilidad de los sistemas.
+
+Desarrollo de flujos de automatización para aprovisionamiento de infraestructura, pipelines de despliegue y tareas operativas.
+
+Soporte en el despliegue de plataformas relacionadas con inteligencia artificial utilizando tecnologías de AWS como Amazon Bedrock.
+
+Colaboración con equipos de ingeniería para mejorar la confiabilidad de las plataformas, los procesos de despliegue y la arquitectura cloud.
+"""
+
+  # Projects section
+  [languages.es.params.projects]
+  enable = true
+  icon = "fa-archive"
+  title = "Proyectos"
+  intro = ""
+
+  [[languages.es.params.projects.list]]
+  title = "Instalar Cursor Editor en Linux"
+  gh_repository_url = "IsRengel/InstallCursorEditorLinux"
+  tagline = "Instalador Bash de código abierto creado para simplificar la instalación de Cursor Editor en Linux cuando no había un paquete oficial disponible. El proyecto automatizó la configuración, la integración de escritorio y las actualizaciones, y recibió contribuciones y comentarios de desarrolladores de todo el mundo."
+
+  # Skills section
+  [languages.es.params.skills]
+  enable = true
+  icon = "fa-tasks"
+  title = "Habilidades"
+
+  [[languages.es.params.skills.list]]
+  skill = "Amazon Web Services (AWS)"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Kubernetes"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Terraform (Infraestructura como Código)"
+  level = "95%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Docker y Contenerización"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Automatización de CI/CD"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "GitOps (GitHub, GitHub Actions)"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Observabilidad (Grafana, métricas, logs, APM)"
+  level = "80%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Sistemas Linux y Bash"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Networking Cloud (VPN, TLS, acceso seguro)"
+  level = "75%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Python"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "FastAPI"
+  level = "90%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Django"
+  level = "80%"
+
+  [[languages.es.params.skills.list]]
+  skill = "SQL y flujos de datos"
+  level = "80%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Go"
+  level = "65%"
+
+  [[languages.es.params.skills.list]]
+  skill = "Microsoft Azure"
+  level = "45%"
+
+  # Footer
+  [languages.es.params.footer]
+  copyright = "Josue Rengel"
