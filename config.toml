@@ -66,7 +66,7 @@ defaultContentLanguage = "en"
   [[languages.en.params.downloads.list]]
   name = "CV / Resume"
   icon = "fa-file-pdf-o"
-  filepath = "assets/pdf/cv-en.pdf"
+  filepath = "assets/pdf/cv_en.pdf"
 
   # Education section
   [languages.en.params.education]
@@ -372,7 +372,7 @@ Collaboration with engineering teams to improve platform reliability, deployment
   [[languages.es.params.downloads.list]]
   name = "CV / Hoja de Vida"
   icon = "fa-file-pdf-o"
-  filepath = "assets/pdf/cv-es.pdf"
+  filepath = "assets/pdf/cv_es.pdf"
 
   # Education section
   [languages.es.params.education]
