@@ -153,7 +153,7 @@ I am passionate about solving complex infrastructure problems, continuously impr
 
   [[languages.en.params.jobs.list]]
   position = "DevOps Engineer"
-  dates = "Mar 2024 - Present"
+  dates = "Oct 2023 - Present"
   company = "Plika"
   details = """
 Design, implementation, and operation of cloud infrastructure primarily on AWS, supporting production systems and data-intensive workloads.
@@ -459,7 +459,7 @@ Me motiva resolver problemas complejos de infraestructura, mejorar continuamente
 
   [[languages.es.params.jobs.list]]
   position = "Ingeniero DevOps"
-  dates = "Mar 2024 - Presente"
+  dates = "Oct 2023 - Presente"
   company = "Plika"
   details = """
 Diseño, implementación y operación de infraestructura en la nube principalmente en AWS, soportando sistemas de producción y cargas de trabajo intensivas en datos.
