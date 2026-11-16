@@ -4,3 +4,5 @@ resources
 .hugo_build.lock
 public/*
 build.ps1
+pdfsrc/
+static/assets/pdf/*.pdf

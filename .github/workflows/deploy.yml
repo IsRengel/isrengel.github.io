@@ -36,6 +36,63 @@ jobs:
           HUGO_ENV: production
         run: hugo --minify
 
+      # The downloadable CVs are rendered from the site itself, so they can
+      # never drift from the HTML. They are not committed to the repo.
+      - name: Build site copy for PDF rendering
+        env:
+          HUGO_ENV: production
+        run: hugo --minify --baseURL "http://localhost:8099/" -d ./pdfsrc
+
+      - name: Render CV PDFs
+        run: |
+          set -euo pipefail
+
+          google-chrome --version
+
+          python3 -m http.server 8099 --directory ./pdfsrc &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+
+          for i in $(seq 1 30); do
+            curl -fsS -o /dev/null "http://localhost:8099/" && break
+            if [ "$i" -eq 30 ]; then echo "::error::local server never came up"; exit 1; fi
+            sleep 1
+          done
+
+          mkdir -p ./public/assets/pdf
+
+          render() {
+            local url="$1" out="$2"
+            echo "Rendering $url -> $out"
+            google-chrome \
+              --headless \
+              --disable-gpu \
+              --no-sandbox \
+              --hide-scrollbars \
+              --virtual-time-budget=20000 \
+              --run-all-compositor-stages-before-draw \
+              --no-pdf-header-footer \
+              --print-to-pdf="$out" \
+              "$url"
+          }
+
+          render "http://localhost:8099/"    ./public/assets/pdf/cv_en.pdf
+          render "http://localhost:8099/es/" ./public/assets/pdf/cv_es.pdf
+
+      # A silently truncated or empty PDF is worse than a failed deploy, since
+      # the download links on the live site would still point at it.
+      - name: Verify rendered PDFs
+        run: |
+          set -euo pipefail
+          for f in ./public/assets/pdf/cv_en.pdf ./public/assets/pdf/cv_es.pdf; do
+            size=$(stat -c%s "$f")
+            echo "$f: $size bytes"
+            if [ "$size" -lt 50000 ]; then
+              echo "::error::$f is only $size bytes - rendering probably failed"
+              exit 1
+            fi
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

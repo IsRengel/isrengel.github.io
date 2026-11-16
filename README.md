@@ -36,21 +36,24 @@ The deployment process is fully automated. This repository utilizes **GitHub Act
 
 ---
 
-## Updating PDF Versions
+## PDF Versions
 
-To ensure the downloadable PDF versions of the CV remain synchronized with the web content, follow these steps:
+The downloadable PDFs are **generated automatically on every deploy** — there is nothing to do by hand, and they can never drift from the HTML.
 
-1. **Generate PDFs:** Use the following tool to convert the live URLs to PDF format: [PDF24 Web-to-PDF](https://tools.pdf24.org/es/sitio-web-a-pdf).
-    
-2. **URLs to Convert:**
-    
-    - **Spanish Version:** `https://isrengel.github.io/es/`
-        
-    - **English Version:** `https://isrengel.github.io/`
-        
-3. **Storage:** Once generated, download the files and place them in the following directory within the project:
-    
-    - `assets/pdf/`
-        
+During the GitHub Actions run, the workflow builds a second copy of the site pointed at `localhost`, serves it, and prints both language versions to PDF with headless Chrome:
 
-By following this process, the downloadable assets will always reflect the latest updates made to the HTML version of the portfolio.
+- `assets/pdf/cv_en.pdf` ← `/`
+- `assets/pdf/cv_es.pdf` ← `/es/`
+
+If either file fails to render, the workflow fails and nothing is deployed, so the live download links never point at a broken file.
+
+Because of this, the PDFs are **not committed to the repository** (they are listed in `.gitignore`). They only exist in the deployed output. To preview them locally:
+
+```bash
+hugo --minify --baseURL "http://localhost:8099/" -d ./pdfsrc
+python3 -m http.server 8099 --directory ./pdfsrc &
+google-chrome --headless --no-pdf-header-footer --virtual-time-budget=20000 \
+  --print-to-pdf=cv_en.pdf http://localhost:8099/
+```
+
+Note that a plain `hugo server` will 404 on the CV download links, since the files are produced only at deploy time.
