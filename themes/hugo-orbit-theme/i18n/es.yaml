@@ -20,3 +20,5 @@
   translation: Referencias laborales
 - id: downloads
   translation: Descargas
+- id: verify_credential
+  translation: Verificar credencial

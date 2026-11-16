@@ -22,3 +22,5 @@
   translation: Job references
 - id: downloads
   translation: Downloads
+- id: verify_credential
+  translation: Verify credential

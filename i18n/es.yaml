@@ -16,3 +16,5 @@
   translation: Certificaciones
 - id: publications
   translation: Publicaciones
+- id: verify_credential
+  translation: Verificar credencial

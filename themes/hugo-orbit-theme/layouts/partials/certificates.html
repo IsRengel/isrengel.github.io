@@ -8,9 +8,17 @@
                     {{ else }}
                     <div class="item">
                         {{ with .title }}<h3 class="level-title">{{.}}</h3>{{end}}
+                        {{ if or .issuer .date }}
+                        <div class="cert-meta">{{ .issuer }}{{ if and .issuer .date }} &middot; {{ end }}{{ .date }}</div>
+                        {{ end }}
                         <div class="level-img">
+                            {{ if .credentialUrl }}<a href="{{ .credentialUrl }}" target="_blank" rel="noopener noreferrer">{{ end }}
                             <img src="{{ .url | absURL }}" alt="{{ .alt }}">
+                            {{ if .credentialUrl }}</a>{{ end }}
                         </div>
+                        {{ with .credentialUrl }}
+                        <a class="cert-verify" href="{{.}}" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i> {{ i18n "verify_credential" }}</a>
+                        {{ end }}
                     </div>
                     {{ end }}
                 {{ end }}

@@ -246,6 +246,32 @@ p {
   height: 12px;
   background: #90ce9d !important;
 }
+.certificateset .item {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.certificateset .level-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.certificateset .cert-meta {
+  color: #97AAC3;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.certificateset .level-img img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+.certificateset .cert-verify {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+}
 .footer {
   padding: 30px;
   padding-top: 60px;

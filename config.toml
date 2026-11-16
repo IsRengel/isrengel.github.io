@@ -49,7 +49,7 @@ defaultContentLanguage = "en"
   [[languages.en.params.contact.list]]
   class = "linkedin"
   icon = "fa-linkedin"
-  url = "https://www.linkedin.com/in/josue-rengel-9093b9258/"
+  url = "https://www.linkedin.com/in/josue-avendano-rengel/"
   title = "LinkedIn"
 
   [[languages.en.params.contact.list]]
@@ -101,6 +101,15 @@ defaultContentLanguage = "en"
   title = "Python for Data Science"
   type = "credly"
   badgeId = "920f716f-5eee-4346-8516-0328084586c3"
+
+  [[languages.en.params.certificates.list]]
+  title = "Certified Critical Thinker"
+  type = "image"
+  issuer = "UIDE / EIG Campus"
+  date = "November 2026"
+  url = "assets/images/certs/certified-critical-thinker.png"
+  alt = "Certified Critical Thinker – UIDE / EIG Campus"
+  credentialUrl = "https://acreditta.com/credential/b343becf-1db8-4439-92bc-d55ed8249e4c"
 
   # Interests section
   [languages.en.params.interests]
@@ -355,7 +364,7 @@ Collaboration with engineering teams to improve platform reliability, deployment
   [[languages.es.params.contact.list]]
   class = "linkedin"
   icon = "fa-linkedin"
-  url = "https://www.linkedin.com/in/josue-rengel-9093b9258/"
+  url = "https://www.linkedin.com/in/josue-avendano-rengel/"
   title = "LinkedIn"
 
   [[languages.es.params.contact.list]]
@@ -407,6 +416,15 @@ Collaboration with engineering teams to improve platform reliability, deployment
   title = "Python for Data Science"
   type = "credly"
   badgeId = "920f716f-5eee-4346-8516-0328084586c3"
+
+  [[languages.es.params.certificates.list]]
+  title = "Certified Critical Thinker"
+  type = "image"
+  issuer = "UIDE / EIG Campus"
+  date = "Noviembre 2026"
+  url = "assets/images/certs/certified-critical-thinker.png"
+  alt = "Certified Critical Thinker – UIDE / EIG Campus"
+  credentialUrl = "https://acreditta.com/credential/b343becf-1db8-4439-92bc-d55ed8249e4c"
 
   # Interests section
   [languages.es.params.interests]
